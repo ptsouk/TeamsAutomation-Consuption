@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "logicAppName": {
+      "value": "MDEIsolate"
+    },
+    "teams_1_Connection_Name": {
+      "value": "teams"
+    },
+    "teams_1_Connection_DisplayName": {
+      "value": "MDEBot@panoslab.onmicrosoft.com"
+    },
+    "teams_1_token:TenantId": {
+      "value": "a6e09f1d-1f05-497b-b499-da099ced752f"
+    },
+    "wdatp_1_Connection_Name": {
+      "value": "wdatp"
+    },
+    "wdatp_1_Connection_DisplayName": {
+      "value": "wdatpSPN"
+    },
+    "wdatp_1_token:clientId": {
+      "value": "8a08d5d6-4b53-40b5-895c-a52376ceba49"
+    },
+    "wdatp_1_token:clientSecret": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/e7a6cbfe-9250-4f75-a13c-4c3d3f235e0d/resourceGroups/ProjectHydra/providers/Microsoft.KeyVault/vaults/panatskeyvault"
+        },
+        "secretName": "wdatpSPNSecret"
+      }
+    },
+    "wdatp_1_token:TenantId": {
+      "value": "a6e09f1d-1f05-497b-b499-da099ced752f"
+    },
+    "image1_URL": {
+      "value": "https://raw.githubusercontent.com/ptsouk/ProjectHydra/5c2903ac800c3f1c8ab411b42c323a6e1430f35a/ProjectHydra/Images/TeamsAdaptiveActionIsolate.png"
+    },
+    "groupId": {
+      "value": "f5f16728-02a1-4e3e-9e60-46d1f92f3aea"
+    },
+    "channelId": {
+      "value": "19:93001e83ae4d4b82b66cf47e3dc3beae@thread.tacv2"
+    }
+  }
+}

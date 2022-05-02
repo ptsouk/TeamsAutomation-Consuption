@@ -1,0 +1,1 @@
+.\Deploy-AzTemplate.ps1 -ArtifactStagingDirectory . -Location westeurope -TemplateFile .\Isolate.json -TemplateParametersFile .\Isolate.parameters.json
