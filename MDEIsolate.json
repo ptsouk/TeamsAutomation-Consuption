@@ -430,7 +430,29 @@
               "type": "string"
             }
           },
-          "triggers": {},
+          "triggers": {
+            "When_keywords_are_mentioned": {
+              "type": "ApiConnectionWebhook",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['teams']['connectionId']"
+                  }
+                },
+                "body": {
+                  "notificationUrl": "@{listCallbackUrl()}",
+                  "channels": [
+                    "[parameters('channelId')]"
+                  ],
+                  "groupId": "[parameters('groupId')]"
+                },
+                "path": "/beta/subscriptions/keywordtrigger/threadType/@{encodeURIComponent('channel')}",
+                "queries": {
+                  "$search": "MDEIsolate"
+                }
+              }
+            }
+          },
           "contentVersion": "1.0.0.0",
           "outputs": {}
         },

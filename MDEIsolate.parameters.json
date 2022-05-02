@@ -26,7 +26,7 @@
     "wdatp_1_token:clientSecret": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/e7a6cbfe-9250-4f75-a13c-4c3d3f235e0d/resourceGroups/ProjectHydra/providers/Microsoft.KeyVault/vaults/panatskeyvault"
+          "id": "/subscriptions/e7a6cbfe-9250-4f75-a13c-4c3d3f235e0d/resourceGroups/TeamsAutomation-Consuption-RG/providers/Microsoft.KeyVault/vaults/wgawt8gtkvw2j75t9k8zb6fh"
         },
         "secretName": "wdatpSPNSecret"
       }
@@ -35,7 +35,7 @@
       "value": "a6e09f1d-1f05-497b-b499-da099ced752f"
     },
     "image1_URL": {
-      "value": "https://raw.githubusercontent.com/ptsouk/ProjectHydra/5c2903ac800c3f1c8ab411b42c323a6e1430f35a/ProjectHydra/Images/TeamsAdaptiveActionIsolate.png"
+      "value": "https://raw.githubusercontent.com/ptsouk/TeamsAutomation-Consuption/master/Images/TeamsAdaptiveActionIsolate.png"
     },
     "groupId": {
       "value": "f5f16728-02a1-4e3e-9e60-46d1f92f3aea"

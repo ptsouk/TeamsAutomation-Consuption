@@ -1,1 +1,1 @@
-.\Deploy-AzTemplate.ps1 -ArtifactStagingDirectory . -Location westeurope -TemplateFile .\Isolate.json -TemplateParametersFile .\Isolate.parameters.json
+.\Deploy-AzTemplate.ps1 -ArtifactStagingDirectory . -Location westeurope -TemplateFile .\MDEIsolate.json -TemplateParametersFile .\MDEIsolate.parameters.json -ResourceGroupName TeamsAutomation-Consuption-RG
